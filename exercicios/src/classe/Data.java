@@ -7,4 +7,8 @@ public class Data {
 	String mes;
 	int ano;
 	
+	String dataFormatada() {
+		String data = dia + "/" +  mes + "/" + ano + "(" + diaSemana + ")";
+		return data;
+	}
 }

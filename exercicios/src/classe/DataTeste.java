@@ -19,7 +19,7 @@ public class DataTeste {
 		quandoDele.ano = 2000;
 		
 		
-		System.out.printf("%d/%s/%d (%s)", quando.dia, quando.mes, quando.ano, quando.diaSemana);
-		System.out.printf("\n%d/%s/%d (%s)", quandoDele.dia, quandoDele.mes, quandoDele.ano, quandoDele.diaSemana);
+		System.out.printf(quando.dataFormatada());
+		System.out.printf("\n" + quandoDele.dataFormatada());
 	}
 }
