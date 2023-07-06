@@ -4,12 +4,7 @@ public class DataTeste {
 	
 	public static void main(String[] args) {
 		
-		Data quando = new Data();
-		
-		quando.dia = 7;
-		quando.diaSemana = "Sábado";
-		quando.mes = "Agosto";
-		quando.ano = 2004;
+		Data quando = new Data(7, "Sábado", "Agosto", 2004);
 		
 		Data quandoDele = new Data();
 		
@@ -18,8 +13,11 @@ public class DataTeste {
 		quandoDele.mes = "Junho";
 		quandoDele.ano = 2000;
 		
+		Data quandoExtra = new Data();
 		
-		System.out.printf(quando.dataFormatada());
-		System.out.printf("\n" + quandoDele.dataFormatada());
+		
+		System.out.println(quando.dataFormatada());
+		System.out.println(quandoDele.dataFormatada());
+		System.out.println(quandoExtra.dataFormatada());
 	}
 }
