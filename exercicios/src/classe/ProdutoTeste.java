@@ -4,14 +4,16 @@ public class ProdutoTeste {
 	
 	public static void main(String[] args) {
 		
-		Produto mercadoria = new Produto();
+		Produto mercadoria = new Produto("Sapato", 70.00);
 		
-		mercadoria.nome = "Sapato";
-		mercadoria.valor = 70.00;
-		mercadoria.desconto = 0.15;
+		Produto.desconto = 0.50;
 		
-		System.out.printf("Produto: %s", mercadoria.nome);
-		System.out.printf("\nDesconto: R$%.2f", (mercadoria.valor * mercadoria.desconto));
-		System.out.printf("\nPreço final: R$%.2f", (mercadoria.valor * (1 - mercadoria.desconto)));
+		Produto mercadoria2 = new Produto();
+		
+		mercadoria2.nome = "Gravata";
+		mercadoria2.valor = 30;
+		
+		System.out.println(mercadoria.nome +": R$"+ mercadoria.valorFinal());
+		System.out.println(mercadoria2.nome + ": R$" + mercadoria2.valorFinal());
 	}
 }
