@@ -3,8 +3,8 @@ package oo.desafio.herança;
 public class Dirigir {
 	public static void main(String[] args) {
 		
-		Civic civic = new Civic();
-		Carro ferrari = new Ferrari();
+		Civic civic = new Civic(180);
+		Carro ferrari = new Ferrari(320);
 		
 		civic.acelerar();
 		civic.acelerar();
