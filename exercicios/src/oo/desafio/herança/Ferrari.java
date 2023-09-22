@@ -1,5 +1,7 @@
 package oo.desafio.herança;
 
+import oo.desafio.teste.Carro;
+
 public class Ferrari extends Carro {
 
 	Ferrari(int maximo){

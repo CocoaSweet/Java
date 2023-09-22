@@ -1,16 +1,16 @@
-package oo.desafio.herança;
+package oo.desafio.teste;
 
 public class Carro {
 	
-	final int VELOCIDADE_MAXIMA;
-	int velocidade = 0;
-	int delta = 5;
+	protected final int VELOCIDADE_MAXIMA;
+	protected int velocidade = 0;
+	protected int delta = 5;
 	
-	Carro(int maximo){
+	public Carro(int maximo){
 		VELOCIDADE_MAXIMA = maximo;
 	}
 	
-	void acelerar() {
+	public void acelerar() {
 		if(velocidade + delta <= VELOCIDADE_MAXIMA){
 			velocidade += delta;
 		} else{
@@ -19,7 +19,7 @@ public class Carro {
 		
 	}
 	
-	void frear() {
+	public void frear() {
 		if (velocidade >= 5) {
 			velocidade -= 5;
 		} else {

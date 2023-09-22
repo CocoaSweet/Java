@@ -1,5 +1,7 @@
 package oo.desafio.herança;
 
+import oo.desafio.teste.Carro;
+
 public class Dirigir {
 	public static void main(String[] args) {
 		
