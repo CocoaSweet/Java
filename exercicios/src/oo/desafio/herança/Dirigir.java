@@ -17,6 +17,7 @@ public class Dirigir {
 		civic.frear();
 		System.out.println(civic);
 		
+		System.out.println(ferrari.nivelAr());
 		ferrari.acelerar();
 		ferrari.acelerar();
 		ferrari.acelerar();
