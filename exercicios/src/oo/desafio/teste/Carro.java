@@ -2,17 +2,26 @@ package oo.desafio.teste;
 
 public class Carro {
 	
+
 	protected final int VELOCIDADE_MAXIMA;
 	protected int velocidade = 0;
-	protected int delta = 5;
+	private int delta = 5;
 	
 	public Carro(int maximo){
 		VELOCIDADE_MAXIMA = maximo;
 	}
 	
+	public int getDelta() {
+		return delta;
+	}
+	
+	public void setDelta(int delta) {
+		this.delta = delta;
+	}
+	
 	public void acelerar() {
-		if(velocidade + delta <= VELOCIDADE_MAXIMA){
-			velocidade += delta;
+		if(velocidade + getDelta() <= VELOCIDADE_MAXIMA){
+			velocidade += getDelta();
 		} else{
 			velocidade = VELOCIDADE_MAXIMA;
 		}

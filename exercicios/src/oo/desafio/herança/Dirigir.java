@@ -5,8 +5,8 @@ import oo.desafio.teste.Carro;
 public class Dirigir {
 	public static void main(String[] args) {
 		
-		Civic civic = new Civic(180);
-		Carro ferrari = new Ferrari(320);
+		Carro civic = new Civic(180);
+		Ferrari ferrari = new Ferrari(320);
 		
 		civic.acelerar();
 		civic.acelerar();
@@ -20,7 +20,11 @@ public class Dirigir {
 		ferrari.acelerar();
 		ferrari.acelerar();
 		ferrari.acelerar();
+		ferrari.ligarTurbo();
+		ferrari.ligarAr();
 		ferrari.acelerar();
+		System.out.println(ferrari);
+		ferrari.desligarTurbo();
 		ferrari.acelerar();
 		System.out.println(ferrari);
 		ferrari.frear();
